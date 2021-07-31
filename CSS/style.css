@@ -1,0 +1,174 @@
+body {
+    margin: 0 auto;
+    font-family: 'Comfortaa', cursive;
+    color: black;
+}
+
+.nav {
+    background-color: #fff;
+    -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav li {
+    padding: 0 24px;
+    letter-spacing: .05em;
+}
+
+.nav li a {
+    position: relative;
+    display: inline-block;
+    padding: 20px 0;
+    transition: .3s;
+    color: black;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    opacity: 1;
+}
+
+.nav li a::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    content: "";
+    transition: .3s;
+    transform: translateX(-50%);
+    background-color: #333;
+}
+
+.nav li a:hover::after {
+    width: 100%;
+}
+
+header h1 {
+    padding-top: 10vh;
+    text-align: center;
+    font-size: 3em;
+}
+
+p {
+    font-size: 2em;
+    padding: 30px;
+    text-align: center;
+    border: medium solid;
+}
+
+.slider img {
+    width: 100vw;
+    height: 70vw;
+}
+
+.slider_img .slick-prev {
+    left: 0;
+    z-index: 1;
+}
+
+.slider_img .slick-next {
+    right: 0;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    opacity: 0.5;
+}
+
+#slider_element div {
+    width: 100vw;
+    height: 25vw;
+    color: rgb(243, 243, 243);
+    text-align: left;
+    font-size: 30px;
+}
+
+.elmnt35 {
+    background: linear-gradient(-135deg, #a28fe5, #f3b6f3);
+    padding: 10px;
+}
+
+.elmnt45 {
+    background: linear-gradient(-45deg, #f5d444, #6d6bee);
+    padding: 10px;
+}
+
+.elmnt90 {
+    background: linear-gradient(90deg, #954ee6, #80a2ca);
+    padding: 10px;
+}
+
+.elmnt-200 {
+    background: linear-gradient(-200deg, #5e94e6, #d1b5e6);
+    padding: 10px;
+}
+
+.elmnt-20 {
+    background: linear-gradient(-20deg, #6bdbfd, #b5f376);
+    padding: 10px;
+}
+
+#rewrite {
+    background-color: whitesmoke;
+}
+
+#flog {
+    margin: 10% auto;
+    width: 15vh;
+}
+
+#flog img {
+    width: 15vh;
+}
+
+.invert {
+    filter: invert();
+}
+
+#inquiry {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#btn {
+    display: flex;
+}
+
+#yes,
+#no {
+    margin: 5vh;
+    width: 50%;
+    border-radius: 6vh;
+    border-bottom: 8px solid;
+    font-size: 1.5em;
+}
+
+#yes {
+    background-color: rgb(145, 165, 201);
+}
+
+#no {
+    background-color: rgb(204, 135, 149);
+}
+
+#yes:hover,
+#no:hover {
+    border-bottom: none;
+    transform: translateY(5px);
+    border: solid 2px;
+    cursor: pointer;
+}
